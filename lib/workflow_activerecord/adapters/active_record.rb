@@ -1,4 +1,4 @@
-module Workflow
+module WorkflowActiverecord
   module Adapter
     module ActiveRecord
       def self.included(klass)
