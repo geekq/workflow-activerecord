@@ -2,7 +2,7 @@ require_relative 'lib/workflow_activerecord/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "workflow-activerecord"
-  gem.version       = Workflow::VERSION
+  gem.version       = WorkflowActiverecord::VERSION
   gem.authors       = ["Vladimir Dobriakov"]
   gem.email         = ["vladimir@geekq.net"]
   gem.description   = "ActiveRecord/Rails Integration for the Workflow library. \nWorkflow is a finite-state-machine-inspired API for modeling and interacting\n    with what we tend to refer to as 'workflow'."

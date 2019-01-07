@@ -1,3 +1,3 @@
-module Workflow
-  VERSION = "0.4.2.0"
+module WorkflowActiverecord
+  VERSION = "0.0.0"
 end
