@@ -23,9 +23,11 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 2.3'
 
+  gem.add_runtime_dependency 'workflow', '~> 2.0a'
+  gem.add_runtime_dependency 'activerecord', rails_versions
+
   gem.add_development_dependency 'rdoc',    [">= 3.12"]
   gem.add_development_dependency 'bundler', [">= 1.0.0"]
-  gem.add_development_dependency 'activerecord', rails_versions
   gem.add_development_dependency 'sqlite3'
   gem.add_development_dependency 'mocha'
   gem.add_development_dependency 'rake'
