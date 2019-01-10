@@ -9,7 +9,6 @@ class AdapterHookTest < ActiveRecordTestCase
 
     class DefaultAdapter < ActiveRecord::Base
       self.table_name = :examples
-      include Workflow
       include WorkflowActiverecord
       workflow do
         state(:initial) { event :progress, :transitions_to => :last }

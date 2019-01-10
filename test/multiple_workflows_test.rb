@@ -17,7 +17,6 @@ class MultipleWorkflowsTest < ActiveRecordTestCase
 
     class Booking < ActiveRecord::Base
 
-      include Workflow
       include WorkflowActiverecord
 
       def initialize_workflow

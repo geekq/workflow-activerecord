@@ -9,7 +9,6 @@ require 'workflow_activerecord'
 ActiveRecord::Migration.verbose = false
 
 class Article < ActiveRecord::Base
-  include Workflow
   include WorkflowActiverecord
 
   workflow do

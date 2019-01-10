@@ -9,7 +9,6 @@ require 'stringio'
 ActiveRecord::Migration.verbose = false
 
 class PersistenceTestOrder < ActiveRecord::Base
-  include Workflow
   include WorkflowActiverecord
 
   workflow do

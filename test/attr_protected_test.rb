@@ -16,7 +16,6 @@ if ActiveRecord::VERSION::MAJOR <= 4
 ActiveRecord::Migration.verbose = false
 
 class AttrProtectedTestOrder < ActiveRecord::Base
-  include Workflow
   include WorkflowActiverecord
 
   workflow do

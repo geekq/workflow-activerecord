@@ -10,7 +10,6 @@ require 'stringio'
 ActiveRecord::Migration.verbose = false
 
 class Order < ActiveRecord::Base
-  include Workflow
   include WorkflowActiverecord
   workflow do
     state :submitted do
@@ -25,7 +24,6 @@ class Order < ActiveRecord::Base
 end
 
 class LegacyOrder < ActiveRecord::Base
-  include Workflow
   include WorkflowActiverecord
 
   workflow_column :foo_bar # use this legacy database column for persistence
@@ -43,7 +41,6 @@ class LegacyOrder < ActiveRecord::Base
 end
 
 class Image < ActiveRecord::Base
-  include Workflow
   include WorkflowActiverecord
 
   workflow_column :status

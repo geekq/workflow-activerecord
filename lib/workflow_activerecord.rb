@@ -13,6 +13,7 @@ end
 
 module WorkflowActiverecord
   def self.included(klass)
+    klass.send :include, ::Workflow
     klass.send :include, Adapter::ActiveRecord
   end
 end
