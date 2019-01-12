@@ -190,8 +190,10 @@ Changelog
 ### New in the version 4.1.0
 
 First version supporting Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2
-Special thanks to https://github.com/voltechs for implementing Rails 5 support
+Special thanks to [@voltechs][] for implementing Rails 5 support
 and helping to revive `workflow`!
+
+[@voltechs]: https://github.com/voltechs
 
 Support
 -------
