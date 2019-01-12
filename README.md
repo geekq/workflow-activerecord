@@ -14,7 +14,7 @@ Coverage](https://codeclimate.com/github/geekq/workflow-activerecord/badges/cove
 **ActiveRecord/Rails Integration for the Workflow library**
 
 Major+minor versions of workflow-activerecord are based on the oldest
-compatible ActiveRecord API.  To use [`workflow`][] with a
+compatible ActiveRecord API. To use [`workflow`][workflow] with
 Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2 please use:
 
     gem 'workflow-activerecord', '>= 4.1', '< 6.0'
@@ -25,12 +25,13 @@ the core 'workflow' gem. But you can also choose a specific version:
     gem 'workflow', '~> 2.0'
     gem 'workflow-activerecord', '>= 4.1pre', '< 6.0'
 
-Please also have a look at the [sample application][]!
+Please also have a look at [the sample application][]!
 
-For detailed introduction into workflow DSL please read [`workflow`][]!
+For detailed introduction into workflow DSL please read the
+[`workflow` README][workflow]!
 
-[`workflow`]: https://github.com/geekq/workflow
-[sample application]: https://github.com/geekq/workflow-rails-sample
+[workflow]: https://github.com/geekq/workflow
+[the sample application]: https://github.com/geekq/workflow-rails-sample
 
 
 State persistence with ActiveRecord
