@@ -29,8 +29,8 @@ Please also have a look at the [sample application][]!
 
 For detailed introduction into workflow DSL please read [`workflow`][]!
 
-[`workflow`](https://github.com/geekq/workflow)
-[sample application](https://github.com/geekq/workflow-rails-sample)
+[`workflow`]: https://github.com/geekq/workflow
+[sample application]: https://github.com/geekq/workflow-rails-sample
 
 
 State persistence with ActiveRecord
