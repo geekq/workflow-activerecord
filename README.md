@@ -42,7 +42,7 @@ only need to define a string field on the table called `workflow_state`
 and include the workflow mixin in your model class as usual:
 
     class Order < ApplicationRecord
-      include Workflow
+      include WorkflowActiverecord
       workflow do
         # list states and transitions here
       end
@@ -67,7 +67,7 @@ Workflow library also adds automatically generated scopes with names based on
 states names:
 
     class Order < ApplicationRecord
-      include Workflow
+      include WorkflowActiverecord
       workflow do
         state :approved
         state :pending
@@ -87,7 +87,7 @@ states names:
 custom persistence column easily, e.g. for a legacy database schema:
 
     class LegacyOrder < ApplicationRecord
-      include Workflow
+      include WorkflowActiverecord
 
       workflow_column :foo_bar # use this legacy database column for
                                # persistence
@@ -140,7 +140,7 @@ Table Inheritance" of the [ActiveRecord documentation][ActiveRecord].
 Then you define your different classes:
 
     class Order < ActiveRecord::Base
-      include Workflow
+      include WorkflowActiverecord
     end
 
     class SmallOrder < Order
@@ -168,7 +168,7 @@ instances via metaclass, e.g.
     # probably depending on some condition or database field
     if # some condition
       class << booking
-        include Workflow
+        include WorkflowActiverecord
         workflow do
           state :state1
           state :state2
