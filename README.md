@@ -39,8 +39,10 @@ State persistence with ActiveRecord
 
 Workflow library can handle the state persistence fully automatically. You
 only need to define a string field on the table called `workflow_state`
-and include the workflow mixin in your model class as usual:
+and require and include the workflow mixin in your model class as usual:
 
+    require 'workflow'
+    require 'workflow_activerecord'
     class Order < ApplicationRecord
       include WorkflowActiverecord
       workflow do
