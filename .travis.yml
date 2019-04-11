@@ -35,12 +35,12 @@ matrix:
     # RUBY 2.3
   - rvm: 2.3
     gemfile: gemfiles/activerecord-5.0.Gemfile
-
   - rvm: 2.3
     gemfile: gemfiles/activerecord-5.1.Gemfile
-
   - rvm: 2.3
     gemfile: gemfiles/activerecord-5.2.Gemfile
+  - rvm: 2.3
+    gemfile: gemfiles/activerecord-6.0.Gemfile
 
     # RUBY 2.4
   - rvm: 2.4
