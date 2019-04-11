@@ -16,11 +16,15 @@ before_script:
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
+# For Ruby support status see also
+# https://www.ruby-lang.org/en/downloads/branches/
 rvm:
+  - 2.6
   - 2.5
   - 2.4
-  - 2.3
 
+# For Rails support status see also
+# https://guides.rubyonrails.org/maintenance_policy.html
 gemfile:
   - gemfiles/activerecord-4.1.Gemfile
   - gemfiles/activerecord-4.2.Gemfile
@@ -31,21 +35,8 @@ gemfile:
 
 
 matrix:
-  exclude:
-    # RUBY 2.3
-  - rvm: 2.3
-    gemfile: gemfiles/activerecord-5.0.Gemfile
-  - rvm: 2.3
-    gemfile: gemfiles/activerecord-5.1.Gemfile
-  - rvm: 2.3
-    gemfile: gemfiles/activerecord-5.2.Gemfile
-  - rvm: 2.3
-    gemfile: gemfiles/activerecord-6.0.Gemfile
-
-    # RUBY 2.4
+  include:
   - rvm: 2.4
     gemfile: gemfiles/activerecord-4.1.Gemfile
-
-    # RUBY 2.5
-  - rvm: 2.5
-    gemfile: gemfiles/activerecord-4.1.Gemfile
+  - rvm: 2.6
+    gemfile: gemfiles/activerecord-6.0.Gemfile

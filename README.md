@@ -188,6 +188,9 @@ example][multiple_workflow_test]!
 Changelog
 ---------
 
+* test build with Ruby 2.6
+* retire Ruby 2.3 since it has reached end of life
+
 ### New in the version 4.1.0
 
 First version supporting Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2
