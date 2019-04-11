@@ -188,8 +188,11 @@ example][multiple_workflow_test]!
 Changelog
 ---------
 
-* test build with Ruby 2.6
+### New in the version 4.1.3
+
 * retire Ruby 2.3 and Rails 4.1 since this Ruby version has reached end of life
+* add build for Rails 6.0 beta, Ruby 2.6
+* fix #4 ruby-graphiz warnings
 
 ### New in the version 4.1.0
 
