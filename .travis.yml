@@ -36,7 +36,20 @@ after_script:
 
 matrix:
   include:
-  - rvm: 2.4
-    gemfile: gemfiles/activerecord-4.1.Gemfile
-  - rvm: 2.6
-    gemfile: gemfiles/activerecord-6.0.Gemfile
+  - gemfile: gemfiles/activerecord-4.1.Gemfile
+    rvm: 2.4
+
+  - gemfile: gemfiles/activerecord-4.2.Gemfile
+    rvm: 2.4
+
+  - gemfile: gemfiles/activerecord-5.0.Gemfile
+    rvm: 2.2
+
+  - gemfile: gemfiles/activerecord-5.1.Gemfile
+    rvm: 2.2
+
+  - gemfile: gemfiles/activerecord-5.2.Gemfile
+    rvm: 2.2
+
+  - gemfile: gemfiles/activerecord-6.0.Gemfile
+    rvm: 2.6
