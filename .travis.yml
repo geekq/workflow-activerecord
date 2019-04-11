@@ -27,6 +27,7 @@ gemfile:
   - gemfiles/activerecord-5.0.Gemfile
   - gemfiles/activerecord-5.1.Gemfile
   - gemfiles/activerecord-5.2.Gemfile
+  - gemfiles/activerecord-6.0.Gemfile
 
 
 matrix:
