@@ -16,40 +16,28 @@ before_script:
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
-# For Ruby support status see also
-# https://www.ruby-lang.org/en/downloads/branches/
-#~rvm:
-#~  - 2.6
-#~  - 2.5
-#~  - 2.4
-
-# For Rails support status see also
-# https://guides.rubyonrails.org/maintenance_policy.html
-#~gemfile:
-#~  - gemfiles/activerecord-4.1.Gemfile
-#~  - gemfiles/activerecord-4.2.Gemfile
-#~  - gemfiles/activerecord-5.0.Gemfile
-#~  - gemfiles/activerecord-5.1.Gemfile
-#~  - gemfiles/activerecord-5.2.Gemfile
-#~  - gemfiles/activerecord-6.0.Gemfile
-
+# For Ruby support status see:
+#   https://www.ruby-lang.org/en/downloads/branches/
+# For Rails support status see:
+#   https://guides.rubyonrails.org/maintenance_policy.html
+# For valid Ruby-Rails combinations see:
+#   https://www.hmallett.co.uk/2018/08/ruby-and-ruby-on-rails-version-compatibility/
 
 matrix:
   include:
-  - gemfile: gemfiles/activerecord-4.1.Gemfile
-    rvm: 2.4
-
   - gemfile: gemfiles/activerecord-4.2.Gemfile
     rvm: 2.4
 
   - gemfile: gemfiles/activerecord-5.0.Gemfile
-    rvm: 2.3
+    rvm: 2.4
 
   - gemfile: gemfiles/activerecord-5.1.Gemfile
-    rvm: 2.3
+    rvm: 2.4
 
   - gemfile: gemfiles/activerecord-5.2.Gemfile
-    rvm: 2.3
+    rvm: 2.4
+  - gemfile: gemfiles/activerecord-5.2.Gemfile
+    rvm: 2.5
 
   - gemfile: gemfiles/activerecord-6.0.Gemfile
     rvm: 2.6

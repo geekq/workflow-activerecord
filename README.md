@@ -189,7 +189,7 @@ Changelog
 ---------
 
 * test build with Ruby 2.6
-* retire Ruby 2.3 since it has reached end of life
+* retire Ruby 2.3 and Rails 4.1 since this Ruby version has reached end of life
 
 ### New in the version 4.1.0
 
