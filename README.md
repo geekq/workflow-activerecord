@@ -188,7 +188,7 @@ You can have a look at an advanced [`on_transition`][] example in
 [STI]: http://www.martinfowler.com/eaaCatalog/singleTableInheritance.html
 [ActiveRecord]: http://api.rubyonrails.org/classes/ActiveRecord/Base.html
 [multiple_workflow_test]: https://github.com/geekq/workflow-activerecord/blob/develop/test/multiple_workflows_test.rb
-[`on_transition`](https://github.com/geekq/workflow#on_transition)
+[`on_transition`]: https://github.com/geekq/workflow#on_transition
 [advanced_hooks_and_validation_test]: http://github.com/geekq/workflow-activerecord/blob/develop/test/advanced_hooks_and_validation_test.rb
 
 Changelog
