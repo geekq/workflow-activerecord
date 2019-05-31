@@ -1,13 +1,14 @@
-require 'rubygems'
-require 'minitest/autorun'
-require 'active_record'
+# Require and start simplecov BEFORE minitest/autorun loads ./lib to get correct test results.
+# Otherwise lot of executed lines are not detected.
 require 'simplecov'
-require 'workflow'
-require 'workflow_activerecord'
-
 SimpleCov.start do
   add_filter 'test'
 end
+
+require 'minitest/autorun'
+require 'active_record'
+require 'workflow'
+require 'workflow_activerecord'
 
 class << Minitest::Test
   def test(name, &block)
