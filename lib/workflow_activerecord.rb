@@ -1,5 +1,5 @@
 require 'rubygems'
-
+require 'workflow'
 require 'workflow/specification'
 require 'workflow_activerecord/adapters/active_record'
 

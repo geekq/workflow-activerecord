@@ -194,6 +194,10 @@ You can have a look at an advanced [`on_transition`][] example in
 Changelog
 ---------
 
+### New in the version 4.1.5
+
+* gh-7 Improve require for base `workflow`
+
 ### New in the version 4.1.3
 
 * retire Ruby 2.3 and Rails 4.1 since this Ruby version has reached end of life
