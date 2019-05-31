@@ -192,6 +192,7 @@ Changelog
 
 ### New in the version 4.1.5
 
+* gh-2 Show code coverage on codeclimate
 * gh-7 Improve require for base `workflow`
 
 ### New in the version 4.1.3
