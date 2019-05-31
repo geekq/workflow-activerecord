@@ -5,10 +5,14 @@ Gem::Specification.new do |gem|
   gem.version       = WorkflowActiverecord::VERSION
   gem.authors       = ["Vladimir Dobriakov"]
   gem.email         = ["vladimir@geekq.net"]
-  gem.description   = "ActiveRecord/Rails Integration for the Workflow library. \nWorkflow is a finite-state-machine-inspired API for modeling and interacting\n    with what we tend to refer to as 'workflow'."
+  gem.description   = <<~DESC
+                        ActiveRecord/Rails Integration for the Workflow library.
+                        Workflow is a finite-state-machine-inspired API for modeling and interacting
+                        with what we tend to refer to as 'workflow'.
+                      DESC
   gem.summary       = %q{ActiveRecord/Rails Integration for the Workflow library.}
   gem.licenses      = ['MIT']
-  gem.homepage      = "http://www.geekq.net/workflow/"
+  gem.homepage      = "https://github.com/geekq/workflow-activerecord"
 
   gem.files         = Dir['CHANGELOG.md', 'README.md', 'LICENSE', 'lib/**/*']
   gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
