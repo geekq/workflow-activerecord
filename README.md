@@ -188,6 +188,11 @@ You can have a look at an advanced [`on_transition`][] example in
 Changelog
 ---------
 
+### New in the version 4.1.7
+
+* gh-9 refactor the implementation to a single file, deprecate `require
+  'workflow_activerecord'` (with the underscore)
+
 ### New in the version 4.1.6
 
 * gh-3, gh-5 allow automatic require of workflow-activerecord - no need for explicit `require` anymore
