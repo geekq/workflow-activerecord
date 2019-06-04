@@ -1,4 +1,4 @@
-require_relative 'lib/workflow_activerecord/version'
+require_relative 'lib/workflow-activerecord/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "workflow-activerecord"
