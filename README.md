@@ -188,6 +188,10 @@ You can have a look at an advanced [`on_transition`][] example in
 Changelog
 ---------
 
+### New in the version 4.1.8
+
+* gh-11 Rails 6.1 support
+
 ### New in the version 4.1.7
 
 * gh-9 refactor the implementation to a single file, deprecate `require
