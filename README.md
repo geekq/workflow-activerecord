@@ -9,15 +9,15 @@
 
 Major+minor versions of workflow-activerecord are based on the oldest
 compatible ActiveRecord API. To use [`workflow`][workflow] with
-Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2 please use:
+Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2, 6.0, 6.1 please use:
 
-    gem 'workflow-activerecord', '>= 4.1', '< 6.0'
+    gem 'workflow-activerecord', '~> 4.1'
 
 This will also automatically include the newest compatible version of
 the core 'workflow' gem. But you can also choose a specific version:
 
     gem 'workflow', '~> 2.0'
-    gem 'workflow-activerecord', '>= 4.1pre', '< 6.0'
+    gem 'workflow-activerecord', '~> 4.1'
 
 Please also have a look at [the sample application][]!
 
