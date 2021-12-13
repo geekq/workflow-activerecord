@@ -36,3 +36,6 @@ matrix:
 
   - gemfile: gemfiles/activerecord-6.1.Gemfile
     rvm: 2.7
+
+  - gemfile: gemfiles/activerecord-7.0.Gemfile
+    rvm: 2.7
