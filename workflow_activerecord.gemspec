@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
     "README.md"
   ]
 
-  rails_versions = ['>= 3.0', '< 6.2']
+  rails_versions = ['>= 3.0']
 
   gem.required_ruby_version = '>= 2.3'
 
