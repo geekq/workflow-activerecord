@@ -4,7 +4,7 @@ $VERBOSE = false
 require 'active_record'
 require 'sqlite3'
 require 'workflow'
-require 'mocha/setup'
+require 'mocha/minitest'
 require 'stringio'
 
 ActiveRecord::Migration.verbose = false
