@@ -5,7 +5,7 @@ require 'active_record'
 require 'logger'
 require 'sqlite3'
 require 'workflow'
-require 'mocha/setup'
+require 'mocha/minitest'
 require 'stringio'
 
 require 'protected_attributes' if ActiveRecord::VERSION::MAJOR == 4

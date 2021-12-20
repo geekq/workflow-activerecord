@@ -8,7 +8,7 @@ end
 require 'minitest/autorun'
 require 'active_record'
 require 'workflow'
-require 'workflow_activerecord'
+require 'workflow-activerecord'
 
 class << Minitest::Test
   def test(name, &block)

@@ -4,7 +4,7 @@ $VERBOSE = false
 require 'active_record'
 require 'sqlite3'
 require 'workflow'
-require 'workflow_activerecord'
+require 'workflow-activerecord'
 
 ActiveRecord::Migration.verbose = false
 

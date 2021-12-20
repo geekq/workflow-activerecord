@@ -188,6 +188,11 @@ You can have a look at an advanced [`on_transition`][] example in
 Changelog
 ---------
 
+### New in the version 4.1.9
+
+* gh-13 Switch CI (continuous integration) from travis-CI to GitHub
+* Tested Rails 7.0 support
+
 ### New in the version 4.1.8
 
 * gh-11 Rails 6.1 support
