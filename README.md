@@ -1,5 +1,5 @@
 [![Version](https://img.shields.io/gem/v/workflow-activerecord.svg)](https://rubygems.org/gems/workflow-activerecord)
-[![Build Status](https://travis-ci.org/geekq/workflow-activerecord.svg)](https://travis-ci.org/geekq/workflow-activerecord)
+[![Test](https://github.com/geekq/workflow-activerecord/actions/workflows/test.yml/badge.svg)](https://github.com/geekq/workflow-activerecord/actions/workflows/test.yml)
 [![Code Climate](https://codeclimate.com/github/geekq/workflow-activerecord/badges/gpa.svg)](https://codeclimate.com/github/geekq/workflow-activerecord)
 [![Test Coverage](https://codeclimate.com/github/geekq/workflow-activerecord/badges/coverage.svg)](https://codeclimate.com/github/geekq/workflow-activerecord/coverage)
 
