@@ -9,9 +9,9 @@
 
 Major+minor versions of workflow-activerecord are based on the oldest
 compatible ActiveRecord API. To use [`workflow`][workflow] with
-Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2, 6.0, 6.1 please use:
+Rails/ActiveRecord 6.0, 6.1, 7.0 please use:
 
-    gem 'workflow-activerecord', '~> 4.1'
+    gem 'workflow-activerecord', '~> 6.0'
 
 This will also automatically include the newest compatible version of
 the core 'workflow' gem. But you can also choose a specific version:
@@ -188,42 +188,17 @@ You can have a look at an advanced [`on_transition`][] example in
 Changelog
 ---------
 
+### New in the version 6.0.0
+
+* GH-14 retire Ruby 2.6 and Rails 5.* and older since they have reached end of
+  live; please use workflow-activerecord 4.1.9, if you still depend on
+  those versions
+
 ### New in the version 4.1.9
 
-* gh-13 Switch CI (continuous integration) from travis-CI to GitHub
+* GH-13 Switch CI (continuous integration) from travis-CI to GitHub
 * Tested Rails 7.0 support
 
-### New in the version 4.1.8
-
-* gh-11 Rails 6.1 support
-
-### New in the version 4.1.7
-
-* gh-9 refactor the implementation to a single file, deprecate `require
-  'workflow_activerecord'` (with the underscore)
-
-### New in the version 4.1.6
-
-* gh-3, gh-5 allow automatic require of workflow-activerecord - no need for explicit `require` anymore
-
-### New in the version 4.1.5
-
-* gh-2 Show code coverage on codeclimate
-* gh-7 Improve require for base `workflow`
-
-### New in the version 4.1.3
-
-* retire Ruby 2.3 and Rails 4.1 since this Ruby version has reached end of life
-* add build for Rails 6.0 beta, Ruby 2.6
-* fix #4 ruby-graphiz warnings
-
-### New in the version 4.1.0
-
-First version supporting Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2
-Special thanks to [@voltechs][] for implementing Rails 5 support
-and helping to revive `workflow`!
-
-[@voltechs]: https://github.com/voltechs
 
 Support
 -------
@@ -238,7 +213,7 @@ About
 
 Author: Vladimir Dobriakov, <https://infrastructure-as-code.de>
 
-Copyright (c) 2010-2019 Vladimir Dobriakov and Contributors
+Copyright (c) 2010-2022 Vladimir Dobriakov and Contributors
 
 Copyright (c) 2008-2009 Vodafone
 

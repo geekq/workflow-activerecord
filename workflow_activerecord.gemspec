@@ -23,11 +23,11 @@ Gem::Specification.new do |gem|
     "README.md"
   ]
 
-  rails_versions = ['>= 3.0']
+  rails_versions = ['>= 6.0']
 
-  gem.required_ruby_version = '>= 2.3'
+  gem.required_ruby_version = '>= 2.7'
 
-  gem.add_runtime_dependency 'workflow', '~> 2.0'
+  gem.add_runtime_dependency 'workflow', '~> 3.0'
   gem.add_runtime_dependency 'activerecord', rails_versions
 
   gem.add_development_dependency 'rdoc',          '~> 6.1'
