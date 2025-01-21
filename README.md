@@ -215,6 +215,33 @@ end
 Changelog
 ---------
 
+### Next
+
+* Ensure other changed attributes will stored together with state change.
+
+  - to avoid a second write query
+      
+      before:
+      ```rb
+      def event
+        o.title = 'new title'
+        o.save
+      end
+      ```
+      
+      now:
+      ```rb
+      def event
+        o.title = 'new title'
+      end
+      ```
+
+* Add Ruby 3.4 to test matrix
+
+  - retires: ruby < 3.3, rails < 7.1
+
+* Defines actual passing state
+
 ### New in the version 6.0.0
 
 * GH-14 retire Ruby 2.6 and Rails 5.* and older since they have reached end of

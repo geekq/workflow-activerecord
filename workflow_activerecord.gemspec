@@ -23,18 +23,18 @@ Gem::Specification.new do |gem|
     "README.md"
   ]
 
-  rails_versions = ['>= 6.0']
+  rails_versions = ['>= 6.0', '< 8.0']
 
-  gem.required_ruby_version = '>= 2.7'
+  gem.required_ruby_version = '>= 3.3'
 
   gem.add_runtime_dependency 'workflow', '~> 3.0'
   gem.add_runtime_dependency 'activerecord', rails_versions
 
-  gem.add_development_dependency 'rdoc',          '~> 6.4'
-  gem.add_development_dependency 'bundler',       '~> 2.3'
-  gem.add_development_dependency 'mocha',         '~> 2.2'
-  gem.add_development_dependency 'rake',          '~> 13.1'
-  gem.add_development_dependency 'minitest',      '~> 5.21'
-  gem.add_development_dependency 'sqlite3',       '~> 1.3'
+  gem.add_development_dependency 'rdoc'#,          '~> 6.4'
+  gem.add_development_dependency 'bundler'#,       '~> 2.3'
+  gem.add_development_dependency 'mocha'#,         '~> 2.2'
+  gem.add_development_dependency 'rake'#,          '~> 13.1'
+  gem.add_development_dependency 'minitest'#,      '~> 5.21'
+  gem.add_development_dependency 'sqlite3'#,       '~> 1.3'
 end
 
